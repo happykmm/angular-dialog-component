@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="/components/dialog/dialog.css"/>
+<div class="myapp-dialog-wrap" ng-show="isShow">
+    <div class="box">
+        <header>
+            <h1>{{title}}</h1>
+            <i class="close" ng-click="clickClose()">&#xe600;</i>
+        </header>
+        <main>
+            <div>{{content}}</div>
+            <div ng-transclude></div>
+        </main>
+        <footer>
+            <button class="ok" ng-click="clickOk()"> OK </button>
+            <button class="cancel" ng-click="clickCancel()"> Cancel </button>
+        </footer>
+    </div>
+</div>
